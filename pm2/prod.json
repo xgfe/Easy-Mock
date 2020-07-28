@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "easy-mock",
+    "script": "./app.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "error_file": "./logs/err.log",
+    "out_file": "./logs/out.log",
+    "watch": true,
+    "ignore_watch" : ["node_modules", "logs","views","test", "public", "db", "readme.md"],
+    "watch_options" : {
+      "followSymlinks": false
+    },
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
